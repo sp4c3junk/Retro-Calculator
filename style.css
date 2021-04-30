@@ -1,0 +1,123 @@
+html {
+    font-family: monospace;
+    background-color: aqua;
+}
+
+#title {
+    text-align: center;
+}
+
+#calculator {
+    background-color: grey;
+    margin: auto;
+    margin-top: 50px;
+    width: 350px;
+    height: 500px;
+    box-shadow: 2px 2px black;
+    display: grid;
+    grid-template-columns: 230px 120px;
+    grid-template-rows: 130px 40px 300px;
+    grid-template-areas: 
+    "display display"
+    "cleaner cleaner"
+    "number signs"
+    "number signs";
+}
+
+#display {
+    background-color: rgb(224, 224, 224);
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    margin: auto;
+    width: 300px;
+    height: 100px;
+    box-shadow: -2px -2px black;
+    grid-area: display;
+}
+
+.rows {
+    height: auto;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+#cleaner {
+    height: auto;
+    display: flex;
+    grid-area: cleaner;
+}
+
+.clean {
+    background-color: rgb(136 136 136);
+    text-align: center;
+    font-size: small;
+    margin: auto;
+    width: 110px;
+    height: 40px;
+    border: 1px solid black;
+    box-shadow: 1px 1px black;
+}
+
+.clean:active{
+    transform: translateY(1px);
+}
+
+#numbers {
+    display: grid;
+    margin-left: 20px;
+    grid-row-gap: 25px;
+    grid-template-columns: 50px 50px 50px;
+    grid-template-rows: 50px 50px 50px 50px;
+    justify-content: space-around;
+    align-self: center;
+    grid-area: number;
+}
+
+.num {
+    width: 50px;
+    height: 50px;
+    background-color: burlywood;
+    border: 1px solid black;
+    text-align: center;
+    box-shadow: 1px 1px black;
+}
+
+.num:active{
+    transform: translateY(1px);
+}
+
+#signs {
+    grid-row-gap: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    grid-area: signs;
+}
+
+.sign {
+    background-color: #8a5cb5;
+    text-align: center;
+    height: 55px;
+    width: 55px;
+    border: 1px solid black;
+    box-shadow: 1px 1px black;
+}
+
+.sign:active{
+    transform: translateY(1px);
+}
+
+#equal {
+    width: 50px;
+    height: 50px;
+    background-color: burlywood;
+    border: 1px solid black;
+    text-align: center;
+    box-shadow: 1px 1px black;
+}
+
+#equal:active{
+    transform: translateY(1px);
+}
