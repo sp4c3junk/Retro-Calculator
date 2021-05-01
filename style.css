@@ -4,7 +4,9 @@ html {
 }
 
 #title {
-    text-align: center;
+    margin: 5px 0px 0px 22px;
+    font-size: 18px;
+    grid-area: title;
 }
 
 #calculator {
@@ -12,12 +14,13 @@ html {
     margin: auto;
     margin-top: 50px;
     width: 350px;
-    height: 500px;
+    height: 520px;
     box-shadow: 2px 2px black;
     display: grid;
     grid-template-columns: 230px 120px;
-    grid-template-rows: 130px 40px 300px;
+    grid-template-rows: 20px 130px 40px 300px;
     grid-template-areas: 
+    "title title"
     "display display"
     "cleaner cleaner"
     "number signs"
@@ -51,7 +54,7 @@ html {
 .clean {
     background-color: rgb(136 136 136);
     text-align: center;
-    font-size: small;
+    font-size: x-small;
     margin: auto;
     width: 110px;
     height: 40px;
